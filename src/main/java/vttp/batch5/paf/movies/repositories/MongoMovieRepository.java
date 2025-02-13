@@ -66,7 +66,7 @@ public class MongoMovieRepository {
             return doc;
         }).collect(Collectors.toList());
 
-        // Perform batch insert using insertAll()
+        
         mongoTemplate.insert(movieDocuments);
         System.out.println("Movies batch inserted into MongoDB successfully.");
     }
